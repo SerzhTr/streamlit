@@ -10,7 +10,7 @@ df = pd.read_csv(r"Data_for_Python_ROMI.csv")
 df = df.melt(id_vars = ["month", "media_source", "country_code","costs","total_users_in_cohort"], \
                        var_name="day_n", \
                        value_name="revenue").copy()
-
+df['day_n'] = df['day_n'].apply(lambda x: int(x))
 #ЗАВДАННЯ НОМЕР 1
 st.subheader("Task 1.1")
 country = (pd.unique(df['country_code'])).tolist()
