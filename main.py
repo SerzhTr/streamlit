@@ -6,7 +6,7 @@ import numpy as np
 st.title("Test case Genesis Accelerator")
 
 
-df = pd.read_excel(r"C:\Users\Gaming\Desktop\Data_for_Python_ROMI.xlsx")
+df = pd.read_csv(r"Data_for_Python_ROMI.csv")
 df = df.melt(id_vars = ["month", "media_source", "country_code","costs","total_users_in_cohort"], \
                        var_name="day_n", \
                        value_name="revenue").copy()
