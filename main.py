@@ -1,9 +1,7 @@
 import streamlit as st
-from streamlit_dynamic_filters import DynamicFilters
 import pandas as pd
-import matplotlib.pyplot as plt
 import numpy as np
-import seaborn as sns
+
 
 st.title("Test case Genesis Accelerator")
 
