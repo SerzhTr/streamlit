@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.title("Test case Genesis Accelerator")
+st.title("Test case Genesis Accelerator (Serhii Trotsiuk)")
 
 df = pd.read_csv(r"Data_for_Python_ROMI.csv")
 df = df.melt(id_vars = ["month", "media_source", "country_code","costs","total_users_in_cohort"], \
