@@ -36,7 +36,7 @@ t = res1.groupby(['media_source','day_n'])\
 t['romi%'] = np.round(((t['revenue'] - t['costs'])/t['costs'])*100,2)
 print(t)
 
-st.line_chart(data = t, x='day_n', y = 'romi%', color = 'media_source')
+st.line_chart(data = t, x='day_n', y = 'romi%', color = 'media_source',  width=2000, height=500)
 
 #Побудова ROMI поденно у розрізі топ-10 країн (топ вибираємо по витратах (cost) на маркетинг за весь час)
 
@@ -55,7 +55,7 @@ t1 = df.query('country_code in @top10_countries')\
 
 t1['romi%'] = np.round(((t1['revenue'] - t1['costs'])/t1['costs'])*100,2)
 
-st.line_chart(data = t1, x='day_n', y = 'romi%', color = 'country_code')
+st.line_chart(data = t1, x='day_n', y = 'romi%', color = 'country_code',  width=2000, height=700)
 
 #Топ-10 комбінацій mediasource та country з найвищим ROMI для кожного календарного місяця
 
