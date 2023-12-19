@@ -57,8 +57,7 @@ t1['romi'] = np.round(((t1['revenue'] - t1['costs'])/t1['costs'])*100,2)
 
 st.line_chart(data = t1, x='day_n', y = 'romi', color = 'country_code')
 
-#Топ-10 комбінацій mediasource та country з найвищим ROMI для кожного
-календарного місяця
+#Топ-10 комбінацій mediasource та country з найвищим ROMI для кожного календарного місяця
 
 st.subheader("Топ-10 комбінацій mediasource та country з найвищим ROMI для кожного
 календарного місяця")
