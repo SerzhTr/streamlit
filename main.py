@@ -62,11 +62,11 @@ st.line_chart(data = t1, x='day_n', y = 'romi%', color = 'country_code',  width=
 st.subheader("Топ-10 комбінацій mediasource та country з найвищим ROMI для кожного календарного місяця")
 
 #обираємо місяць
-chosen_month = st.radio("Choose month: ", ("June 2020", "August 2020", "September 2020"))
+chosen_month = st.radio("Choose month: ", ("July 2020", "August 2020", "September 2020"))
 
 #визначає номер місяця
 def give_month(n_month):
-    if n_month == "June 2020":
+    if n_month == "July 2020":
         return 7
     elif n_month == "August 2020":
         return 8
@@ -75,7 +75,7 @@ def give_month(n_month):
 
 #визначає кількість днів у календарному місяці
 def give_num_of_days(n_month):
-    if n_month in ("June 2020", "August 2020"):
+    if n_month in ("July 2020", "August 2020"):
         return '30'
     else:
         return '29'
