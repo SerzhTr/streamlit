@@ -90,4 +90,4 @@ t2 = df.query('month == @month and day_n == 30 and country_code != "Unknown" and
 t2['romi%'] = np.round(((t2['revenue'] - t2['costs'])/t2['costs'])*100,2)
 t2['combination'] = t2['media_source'] + " " + t2['country_code']
 
-st.bar_chart(t2.sort_values('romi%', ascending=False).head(10), x="combination", y="romi")
+st.bar_chart(t2.sort_values('romi%', ascending=False).head(10), x="combination", y="romi%")
