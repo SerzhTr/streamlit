@@ -59,8 +59,7 @@ st.line_chart(data = t1, x='day_n', y = 'romi', color = 'country_code')
 
 #Топ-10 комбінацій mediasource та country з найвищим ROMI для кожного календарного місяця
 
-st.subheader("Топ-10 комбінацій mediasource та country з найвищим ROMI для кожного
-календарного місяця")
+st.subheader("Топ-10 комбінацій mediasource та country з найвищим ROMI для кожного календарного місяця")
 
 #обираємо місяць
 chosen_month = st.radio("Choose month: ", ("June 2020", "August 2020", "September 2020"))
