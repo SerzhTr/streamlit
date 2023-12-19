@@ -33,10 +33,10 @@ t = res1.groupby(['media_source','day_n'])\
     .agg({'costs':'sum', 'revenue':'sum'})\
     .reset_index().copy()
 
-t['romi'] = np.round(((t['revenue'] - t['costs'])/t['costs'])*100,2)
+t['romi%'] = np.round(((t['revenue'] - t['costs'])/t['costs'])*100,2)
 print(t)
 
-st.line_chart(data = t, x='day_n', y = 'romi', color = 'media_source')
+st.line_chart(data = t, x='day_n', y = 'romi%', color = 'media_source')
 
 #Побудова ROMI поденно у розрізі топ-10 країн (топ вибираємо по витратах (cost) на маркетинг за весь час)
 
